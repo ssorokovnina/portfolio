@@ -202,6 +202,10 @@
 	padding-top: 60px;
 }
 
+.video__image {
+	width: 100%;
+}
+
 .video::after {
 	content: url('./assets/svg/Play_hover.svg');
 
@@ -326,3 +330,17 @@
 	resize: none;
 	overflow: hidden;
 }
+
+/* footer */
+
+.footer__container {
+	height: 250px;
+}
+
+.footer__data {
+	display: flex;
+	justify-content: space-between;
+
+	padding-top: 100px;
+}
+
