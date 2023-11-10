@@ -107,7 +107,7 @@
 	line-height: 40px;
 }
 
-.button__action {
+.button__active {
 	width: 220px;
 	height: 55px;
 
@@ -117,6 +117,14 @@
 }
 
 /* main skills */
+
+.section {
+	padding-top: 100px;
+}
+
+.section_without_padding {
+	padding: 0;
+}
 
 .section__title {
 	position: relative;
@@ -160,4 +168,28 @@
 	font-size: 18px;
 
 	padding: 20px 20px 8px;
+}
+
+/* main portfolio */
+
+.section__buttons {
+	display: flex;
+	justify-content: space-between;
+	width: 895px;
+
+	padding: 60px 0;
+	margin: 0 auto;
+}
+
+.button__inactive {
+	background-color: transparent;
+	color:#BDAE82;
+	border: 1px solid #BDAE82;
+}
+
+.section__photos {
+	display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: wrap-reverse;
+	justify-content: space-between;
 }
