@@ -12,6 +12,8 @@
 	font-weight: 400;
 	color: #FFFFFF;
 	line-height: 40px;
+
+	background-color: #000000;
 }
 
 .logo {
@@ -116,5 +118,46 @@
 
 /* main skills */
 
+.section__title {
+	position: relative;
+	text-align: center;
 
+	color: #BDAE82;
+	font-family: 'Merriweather', serif;
+	font-weight: bold;
+	font-size: 40px;
 
+	margin: 0 auto;
+}
+
+.skills {
+	padding: 60px 20px 0;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.skills__item {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+
+	width: 320px;
+	height: 240px;
+}
+
+.skills__logo {
+	padding-bottom: 50px;
+}
+
+.skills__title {
+	font-weight: bold;
+}
+
+.skills__text {
+	text-align: center;
+	font-size: 18px;
+
+	padding: 20px 20px 8px;
+}
