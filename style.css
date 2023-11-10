@@ -127,8 +127,8 @@
 }
 
 .section__title {
-	position: relative;
 	text-align: center;
+	height: 80px;
 
 	color: #BDAE82;
 	font-family: 'Merriweather', serif;
@@ -192,4 +192,61 @@
 	flex-direction: row-reverse;
 	flex-wrap: wrap-reverse;
 	justify-content: space-between;
+}
+
+/* main video */
+
+.video {
+	position: relative;
+	padding-top: 60px;
+}
+
+.video::after {
+	content: url('./assets/svg/Play_hover.svg');
+
+	position: absolute;
+	right: 640px;
+	top: 350px;
+}
+
+/* main price */
+
+.section__cards {
+	display: flex;
+	justify-content: space-between;
+}
+
+.card {
+	width: 450px;
+	padding: 43px 0;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	border: 1px solid #BDAE82;
+}
+
+.card__title {
+	font-family: 'Merriweather', serif;
+	font-size: 28px;
+	font-weight: bold;
+
+	height: 56px;
+}
+
+.card__price {
+	font-family: 'Merriweather', serif;
+	font-size: 24px;
+	font-weight: bold;
+	color: #BDAE82;
+}
+
+.card__description {
+	width: 364px;
+	padding: 20px 0 40px;
+
+	text-align: center;
+	font-size: 18px;
+	line-height: 36px;
 }
