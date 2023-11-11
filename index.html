@@ -9,6 +9,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./assets/svg/camera-1.ico" type="image/x-icon">
 
     <title>Portfolio</title>
 </head>
@@ -38,7 +39,11 @@
 						</ul>
 					</nav>
 					<div class="lang">
-						<button class="lang__button"><span class="gold">en</span> / ru</button>
+						<button class="lang__button">
+                            <span class="gold">en</span>
+                            <span class="slash">/</span> 
+                            ru
+                        </button>
 					</div>
 				</div>
 			</div>
@@ -149,6 +154,7 @@
 
                 <div class="video">
                     <img class="video__image" src="./assets/img/video-player.jpg">
+                     <div class="video__play"></div>
                 </div>
             </section>
 
@@ -210,7 +216,7 @@
 							<input type="email" class="form__input" placeholder="E-mail">
 						</li>
 						<li class="form__item">
-							<input type="phone" class="form__input" placeholder="Phone">
+							<input type="tel" class="form__input" placeholder="Phone">
 						</li>
 						<li class="form__item form__textarea">
 							<textarea class="textarea" placeholder="Message"></textarea>
