@@ -1,0 +1,52 @@
+.section__cards {
+    padding-top: 60px;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.card {
+	width: 450px;
+	height: 505px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	border: 3px solid var(--sub-color);
+}
+
+.card__title {
+    padding-top: 43px;
+
+	font-family: var(--sub-font-family);
+	font-size: 28px;
+	font-weight: bold;
+
+	line-height: 56px;
+}
+
+.card__price {
+	padding: 20px 0;
+
+	font-family: var(--sub-font-family);
+	font-size: 24px;
+	font-weight: bold;
+
+	line-height: 48px;
+	color: var(--sub-color);
+}
+
+.card__description {
+	width: 364px;
+
+	padding: 0 0 40px;
+
+	text-align: center;
+	font-size: 18px;
+	line-height: 36px;
+}
+
+.button {
+    padding: 0;
+}
