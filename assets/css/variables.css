@@ -16,4 +16,8 @@
         contrast(87%);
 
     --header-height: 90px;
+    --header-height-minus: -90px;
+
+    --button-width: 220px;
+    --button-height: 55px;
 }

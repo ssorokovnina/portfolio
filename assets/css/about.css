@@ -1,0 +1,37 @@
+@import "./assets/css/variables.css";
+
+.about {
+    height: 820px;
+
+    background-image: url('../img/bg.jpg');
+    background-position: center var(--header-height-minus);
+    background-repeat: no-repeat;
+}
+
+.author {
+    width: 580px;
+    padding: 160px 0 0 60px;
+}
+
+.author__title {
+	font-family: var(--sub-font-family);
+	font-size: 60px;
+	line-height: 120px;
+}
+
+.author__text {
+	padding: 10px 30px 25px 0;
+}
+
+.button__active {
+	width: var(--button-width);
+	height: var(--button-height);
+
+	background-color: var(--sub-color);
+
+	font: inherit;
+}
+
+.button__active:hover {
+	color: var(--main-color);
+}

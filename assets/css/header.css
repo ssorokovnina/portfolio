@@ -22,9 +22,7 @@
     filter: var(--hover-change-color);
 }
 
-.wrapper__nav {
-    /* width: 570px; */
-    
+.wrapper__nav {    
     display: flex;
     align-items: center;
 }

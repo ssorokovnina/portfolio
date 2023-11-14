@@ -1,6 +1,7 @@
 @import "./assets/css/clear.css";
 @import "./assets/css/variables.css";
 @import "./assets/css/header.css";
+@import "./assets/css/about.css";
 
 .container {
     max-width: 1440px;
