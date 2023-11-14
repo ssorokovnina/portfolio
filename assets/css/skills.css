@@ -1,0 +1,37 @@
+@import "./assets/css/variables.css";
+
+.skills {
+    padding-top: 60px;
+
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.skills__item {
+    width: 320px;
+	height: 240px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.skills__logo {
+	height: 50px;
+}
+
+.skills__title {
+    padding-top: 50px;
+
+    font: inherit;
+	font-weight: bold;
+}
+
+.skills__text {
+    padding: 20px 20px 8px;
+    
+	text-align: center;
+	line-height: 36px;
+	font-size: 18px;
+}
