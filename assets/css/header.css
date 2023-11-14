@@ -1,5 +1,3 @@
-@import "./assets/css/variables.css";
-
 .wrapper {
     height: var(--header-height);
 

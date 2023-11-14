@@ -1,0 +1,19 @@
+.video {
+    height: 765px;
+    padding-top: 60px;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.video__player {
+	position: absolute;
+}
+
+.video__player:hover {
+	cursor: var(--hover-cursor);
+	filter: var(--hover-change-color);
+}
