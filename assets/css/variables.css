@@ -1,0 +1,19 @@
+:root {
+    --main-color: #FFFFFF;
+    --sub-color: #BDAE82;
+    --main-bg-color: #000000;
+
+    --main-font-family: 'Inter', sans-serif;
+    --sub-font-family: 'Merriweather', serif;
+
+    --main-font-size: 20px;
+    --main-font-weight: 400;
+
+    --main-line-height: 40px;
+
+    --hover-cursor: pointer;
+    --hover-change-color: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+        contrast(87%);
+
+    --header-height: 90px;
+}

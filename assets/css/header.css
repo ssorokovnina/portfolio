@@ -1,0 +1,61 @@
+@import "./assets/css/variables.css";
+
+.wrapper {
+    height: var(--header-height);
+
+    display: flex;
+    justify-content: space-between;
+
+    background-image: url('../img/bg.jpg');
+    background-position: center 0;
+    background-repeat: no-repeat;
+}
+
+.logo, .page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo:hover {
+    cursor: var(--hover-cursor);
+    filter: var(--hover-change-color);
+}
+
+.wrapper__nav {
+    /* width: 570px; */
+    
+    display: flex;
+    align-items: center;
+}
+
+.menu__list {
+    display: flex;
+}
+
+.menu__item {
+    padding-left: 30px;
+}
+
+.menu__link:hover {
+    color: var(--sub-color);
+}
+
+.lang {
+    padding-left: 31px;
+}
+
+.lang__button {
+    color: inherit;
+
+	font: inherit;
+    font-weight: bold;
+}
+
+.slash {
+	padding: 0 4px;
+}
+
+.gold {
+	color: var(--sub-color);
+}
