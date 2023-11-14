@@ -1,55 +1,7 @@
 @import "./assets/css/clear.css";
+@import "./assets/css/general.css";
 @import "./assets/css/variables.css";
 @import "./assets/css/header.css";
 @import "./assets/css/about.css";
 @import "./assets/css/skills.css";
-
-.container {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 20px;
-
-    background-color: var(--main-bg-color);  
-
-	font-family: var(--main-font-family);
-	font-weight: var(--main-font-weight);
-	font-size: var(--main-font-size);
-	line-height: var(--main-line-height);
-    color: var(--main-color);
-}
-
-.section {
-    position: relative;
-
-    padding-top: 100px;
-}
-
-.section__title {
-    font-family: var(--sub-font-family);
-    font-weight: bold;
-    color: var(--sub-color);
-    font-size: var(--title-font-size);
-
-    line-height: var(--title-line-height);
-    text-align: center;
-}
-
-.section__title::before {
-    content: '';
-    position: absolute;
-    top: 139px;
-    left: 350px;
-
-    width: 700px;
-    height: 2px;
-
-    background-color: var(--sub-color);
-}
-
-.black_bg {
-    display: inline-block;
-    position: relative;
-
-    padding: 0 20px;
-    background-color: #000;
-}
+@import "./assets/css/portfolio.css";

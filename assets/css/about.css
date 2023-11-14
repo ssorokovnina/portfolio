@@ -22,16 +22,3 @@
 .author__text {
 	padding: 10px 30px 25px 0;
 }
-
-.button__active {
-	width: var(--button-width);
-	height: var(--button-height);
-
-	background-color: var(--sub-color);
-
-	font: inherit;
-}
-
-.button__active:hover {
-	color: var(--main-color);
-}

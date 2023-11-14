@@ -1,0 +1,32 @@
+@import "./assets/css/variables.css";
+
+.section__buttons {
+    padding: 60px 0 35px;
+	margin: 0 auto;
+
+	display: flex;
+	justify-content: center;
+}
+
+.button {
+    padding-right: 5px;
+}
+
+.button__inactive {
+    background-color: transparent;
+	color: var(--sub-color);
+
+	border: 1px solid var(--sub-color);
+}
+
+.section__photos {
+	display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: wrap-reverse;
+	justify-content: space-between;
+}
+
+.section__photo {
+    height: 585px;
+	padding-top: 25px;
+}
