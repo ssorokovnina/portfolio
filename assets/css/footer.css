@@ -1,0 +1,46 @@
+.footer__container {
+	height: 143px;
+}
+
+.footer__data {
+    padding-top: 43px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+
+	line-height: 50px;
+}
+
+.footer__cite {
+    width: 169px;
+
+	display: flex;
+	justify-content: space-between;	
+}
+
+.github:hover {
+	color: var(--sub-color);
+}
+
+.footer__uni {
+    padding-left: 35px;
+}
+
+.socials__links {
+    height: 50px;
+
+	display: flex;
+    align-items: center;
+}
+
+.socials__item {
+    width: 52px;
+    height: 32px;
+
+	padding-left: 20px;
+}
+
+.socials__link:hover {
+	filter: var(--hover-change-color);
+}
