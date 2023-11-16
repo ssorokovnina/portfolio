@@ -1,4 +1,4 @@
-.wrapper {
+.header__wrapper {
     height: var(--header-height);
 
     display: flex;
@@ -20,7 +20,7 @@
     filter: var(--hover-change-color);
 }
 
-.wrapper__nav {    
+.navigation {    
     display: flex;
     align-items: center;
 }
