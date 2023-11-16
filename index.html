@@ -13,12 +13,12 @@
 
     <title>Portfolio</title>
 </head>
-<body>
+<body class="body">
     <header class="header">
         <div class="container">
 			<div class="wrapper">
 				<div class="logo">
-                    <a href="" class="page">
+                    <a href="./index.html" class="logo__link">
                         <img src="./assets/svg/logo.svg" alt="logo" class="logo__image">
                     </a>
 				</div>
@@ -41,11 +41,9 @@
 						</ul>
 					</nav>
 					<div class="lang">
-						<button class="lang__button">
-                            <span class="gold">en</span>
-                            <span class="slash">/</span> 
-                            ru
-                        </button>
+                        <button class="lang__en">en</button>
+                        <span class="lang__slash">/</span>
+                        <button class="lang__ru">ru</button>
 					</div>
 				</div>
 			</div>
@@ -62,15 +60,15 @@
                         happy moments of life together with professional
                         photographer Alexa Rise
                     </p>
-					<div class="button">
-                    	<button class="button__active">Hire me</button>
+					<div class="buttons__button">
+                    	<button class="buttons__button_active">Hire me</button>
 					</div>
                 </section>
             </div>
 
             <section id="skills" class="section">
                 <h2 class="section__title">
-                    <div class="black_bg">
+                    <div class="section__title_bg">
                         Skills
                     </div>
                 </h2>
@@ -117,117 +115,121 @@
 
             <section class="section">
                 <h2 id="portfolio" class="section__title">
-                    <div class="black_bg">
+                    <div class="section__title_bg">
                         Portfolio
                     </div>
                 </h2>
 
-                <ul class="section__buttons">
-                    <li class="button">
-                        <button class="button__active button__inactive">Winter</button>
+                <ul class="buttons">
+                    <li class="buttons__button">
+                        <button class="buttons__button_active buttons__button_inactive">Winter</button>
                     </li>
-                    <li class="button">
-                        <button class="button__active button__inactive">Spring</button>
+                    <li class="buttons__button">
+                        <button class="buttons__button_active buttons__button_inactive">Spring</button>
                     </li>
-                    <li class="button">
-                        <button class="button__active button__inactive">Summer</button>
+                    <li class="buttons__button">
+                        <button class="buttons__button_active buttons__button_inactive">Summer</button>
                     </li>
-                    <li class="button">
-                        <button class="button__active">Autumn</button>
+                    <li class="buttons__button">
+                        <button class="buttons__button_active">Autumn</button>
                     </li>
                 </ul>
 
-                <ul class="section__photos">
-                    <li class="section__photo">
-                        <img src="./assets/img/img-1.jpg" alt="image_1" class="portfolio__image">
+                <ul class="photos">
+                    <li class="photos__photo">
+                        <img src="./assets/img/img-1.jpg" alt="image_1" class="photos__image">
                     </li>
-                    <li class="section__photo">
-                        <img src="./assets/img/img-2.jpg" alt="image_2" class="portfolio__image">
+                    <li class="photos__photo">
+                        <img src="./assets/img/img-2.jpg" alt="image_2" class="photos__image">
                     </li>
-                    <li class="section__photo">
-                        <img src="./assets/img/img-3.jpg" alt="image_3" class="portfolio__image">
+                    <li class="photos__photo">
+                        <img src="./assets/img/img-3.jpg" alt="image_3" class="photos__image">
                     </li>
-                    <li class="section__photo">
-                        <img src="./assets/img/img-4.jpg" alt="image_4" class="portfolio__image">
+                    <li class="photos__photo">
+                        <img src="./assets/img/img-4.jpg" alt="image_4" class="photos__image">
                     </li>
-                    <li class="section__photo">
-                        <img src="./assets/img/img-5.jpg" alt="image_5" class="portfolio__image">
+                    <li class="photos__photo">
+                        <img src="./assets/img/img-5.jpg" alt="image_5" class="photos__image">
                     </li>
-                    <li class="section__photo">
-                        <img src="./assets/img/img-6.jpg" alt="image_6" class="portfolio__image">
+                    <li class="photos__photo">
+                        <img src="./assets/img/img-6.jpg" alt="image_6" class="photos__image">
                     </li>
                 </ul>
             </section>
 
             <section class="section">
                 <h2 id="video" class="section__title">
-                    <div class="black_bg">
+                    <div class="section__title_bg">
                         Video
                     </div>
                 </h2>
 
                 <div class="video">
-                    <img class="video__image" src="./assets/img/video-player.jpg">
-                    <button class="video__player">
-                        <img src="./assets/svg/Play_hover.svg" alt="player">
-                    </button>
+                    <img class="video__image" src="./assets/img/video-player.jpg" alt="video">
+                    <button class="video__player"></button>
                 </div>
             </section>
 
             <section class="section">
                 <h2 id="price" class="section__title">
-                    <div class="black_bg">
+                    <div class="section__title_bg">
                         Price
                     </div>
                 </h2>
 
-                <ul class="section__cards">
+                <ul class="cards">
                     <li class="card">
                         <h3 class="card__title">Standard</h3>
                         <div class="card__price">500 $</div>
-                        <p class="card__description">
-                            One location<br>
-                            120 photos in color<br>
-                            12 photos in retouch<br>
-                            Readiness 2-3 weeks<br>
-                            Make up, visage<br>
-                        </p>
-                        <div class="button button_card">
-                            <button class="button__active">Order shooting</button>
+                        <div class="card__description">
+                            <ul class="services">
+                                <li class="services__item">One location</li>
+                                <li class="services__item">120 photos in color</li>
+                                <li class="services__item">12 photos in retouch</li>
+                                <li class="services__item">Readiness 2-3 weeks</li>
+                                <li class="services__item">Make up, visage</li>
+                            </ul>
+                        </div>
+                        <div class="buttons__button buttons__button_pd0">
+                            <button class="buttons__button_active">Order shooting</button>
                         </div>
                     </li>
                     <li class="card">
                         <h3 class="card__title">Premium</h3>
                         <div class="card__price">700 $</div>
-                        <p class="card__description">
-                            One or two locations<br>
-                            200 photos in color<br>
-                            20 photos in retouch<br>
-                            Readiness 1-2 weeks<br>
-                            Make up, visage<br>
-                        </p>
-                        <div class="button button_card">
-                            <button class="button__active">Order shooting</button>
+                        <div class="card__description">
+                            <ul class="services">
+                                <li class="services__item">One or two locations</li>
+                                <li class="services__item">200 photos in color</li>
+                                <li class="services__item">20 photos in retouch</li>
+                                <li class="services__item">Readiness 1-2 weeks</li>
+                                <li class="services__item">Make up, visage</li>
+                            </ul>
+                        </div>
+                        <div class="buttons__button buttons__button_pd0">
+                            <button class="buttons__button_active">Order shooting</button>
                         </div>
                     </li>
                     <li class="card">
                         <h3 class="card__title">Gold</h3>
                         <div class="card__price">1000 $</div>
-                        <p class="card__description">
-                            Three locations or more<br>
-                            300 photos in color<br>
-                            50 photos in retouch<br>
-                            Readiness 1 week<br>
-                            Make up, visage, hairstyle<br>
-                        </p>
-                        <div class="button button_card">
-                            <button class="button__active">Order shooting</button>
+                        <div class="card__description">
+                            <ul class="services">
+                                <li class="services__item">Three locations or more</li>
+                                <li class="services__item">300 photos in color</li>
+                                <li class="services__item">50 photos in retouch</li>
+                                <li class="services__item">Readiness 1 week</li>
+                                <li class="services__item">Make up, visage, hairstyle</li>
+                            </ul>
+                        </div>
+                        <div class="buttons__button buttons__button_pd0">
+                            <button class="buttons__button_active">Order shooting</button>
                         </div>
                     </li>
                 </ul>
             </section>
 
-            <section class="section section_contacts">
+            <section class="section section-contacts">
 				<div class="contacts">
 					<h2 id="contacts" class="section__title contacts__title">Contact me</h2>
 
@@ -239,11 +241,11 @@
 							<input type="tel" class="form__input" placeholder="Phone">
 						</li>
 						<li class="form__item form__textarea">
-							<textarea class="textarea" placeholder="Message"></textarea>
+							<textarea class="textarea" placeholder="Message" maxlength="150"></textarea>
 						</li>
 					</ul>
-					<div class="button">
-						<button class="button__active">Send message</button>
+					<div class="buttons__button">
+						<button class="buttons__button_active">Send message</button>
 					</div>
 				</div>
             </section>
@@ -254,7 +256,7 @@
             <div class="footer__data">
 				<div class="footer__cite">
 					<div class="cite">
-                        &copy
+                        &copy;
                     </div> 
                     <div class="year">
                         2022

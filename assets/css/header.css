@@ -9,7 +9,7 @@
     background-repeat: no-repeat;
 }
 
-.logo, .page {
+.logo, .logo__link {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,17 +41,17 @@
     padding-left: 31px;
 }
 
-.lang__button {
+.lang__en, .lang__slash, .lang__ru {
     color: inherit;
 
 	font: inherit;
-    font-weight: bold;
+    font-weight: 700;
 }
 
-.slash {
+.lang__slash {
 	padding: 0 4px;
 }
 
-.gold {
+.lang__en {
 	color: var(--sub-color);
 }

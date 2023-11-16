@@ -1,4 +1,4 @@
-.section__buttons {
+.buttons {
     padding: 60px 0 35px;
 	margin: 0 auto;
 
@@ -6,25 +6,25 @@
 	justify-content: center;
 }
 
-.button {
+.buttons__button {
     padding-right: 5px;
 }
 
-.button__inactive {
+.buttons__button_inactive {
     background-color: transparent;
 	color: var(--sub-color);
 
 	border: 2px solid var(--sub-color);
 }
 
-.section__photos {
+.photos {
 	display: flex;
 	flex-direction: row-reverse;
 	flex-wrap: wrap-reverse;
 	justify-content: space-between;
 }
 
-.section__photo {
+.photos__photo {
     height: 585px;
 	padding-top: 25px;
 }
