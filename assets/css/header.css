@@ -52,6 +52,10 @@
 	padding: 0 4px;
 }
 
-.lang__en {
+.lang__en:hover, .lang__ru:hover {
+    color: var(--sub-color);
+}
+
+.lang .active {
 	color: var(--sub-color);
 }
