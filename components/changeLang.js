@@ -26,6 +26,7 @@ function changeLang() {
                 item.classList.add('active');
                 activeBtn.classList.remove('active');
                 activeBtn = item;
+                localStorage.setItem('lang', activeBtn.innerText);
 
                 getTranslate(item.innerText);
             }
