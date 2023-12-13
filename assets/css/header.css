@@ -30,7 +30,7 @@
     display: flex;
 }
 
-.menu__item, .theme {
+.menu__item, .theme-element {
     padding-left: 30px;
 }
 
@@ -61,7 +61,7 @@
 	color: var(--sub-color);
 }
 
-.theme {
+.theme-element {
     width: 75px;
     height: 45px;
 }

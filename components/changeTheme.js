@@ -1,21 +1,27 @@
-function changeTheme() {
+function changeClassTheme(theme) {
     const themeImage = document.querySelector('.theme__image');
-    const changableElements = document.querySelectorAll('.black-theme');
+    const changableElements = document.querySelectorAll('.theme');
 
+    themeImage.dataset.theme = themeImage.classList[2];
 
-    themeImage.addEventListener('click', (evt) => {
-        
-        changableElements.forEach( (item) => {
-            item.classList.toggle('light-theme');
-        })
+    changableElements.forEach( (item) => {
+        if (!item.classList.contains(theme)) {
+            item.classList.add(theme);
 
-        if (themeImage.classList.contains('light-theme')) {
-            themeImage.src = './assets/svg/light-theme.svg';
-            localStorage.setItem('theme', 'light');
-        } else {
-            themeImage.src = './assets/svg/black-theme.svg';
-            localStorage.setItem('theme', 'black');
+            themeImage.src = `./assets/svg/${theme}.svg`;
+
+            item.classList.remove(themeImage.dataset.theme);
+            
         }
+    })
+}
+
+function changeTheme() {
+    let dataAttr = document.querySelector('[data-theme]');
+
+    dataAttr.addEventListener('click', (evt) => {
+        console.log('current data name ', evt.target.dataset.theme);
+        changeClassTheme(evt.target.dataset.theme);
     })
 }
 

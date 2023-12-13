@@ -13,7 +13,7 @@
 
     <title>Portfolio</title>
 </head>
-<body class="body black-theme">
+<body class="body theme black-theme">
     <header class="header">
         <div class="container">
 			<div class="header__wrapper">
@@ -45,8 +45,8 @@
                         <span class="lang__slash">/</span>
                         <button class="lang__ru">ru</button>
 					</div>
-                    <div class="theme">
-                        <img src="./assets/svg/black-theme.svg" alt="theme changer icon" class="theme__image black-theme">
+                    <div class="theme-element">
+                        <img src="./assets/svg/black-theme.svg" alt="theme changer icon" data-theme="light-theme" class="theme__image theme black-theme">
                     </div>
 				</div>
 			</div>
@@ -70,10 +70,10 @@
             </div>
         </div>
 
-        <div class="container black-theme">
-            <section id="skills" class="section black-theme">
-                <h2 class="section__title black-theme">
-                    <span class="section__title_bg black-theme" data-i18n="skills">
+        <div class="container theme black-theme">
+            <section id="skills" class="section theme black-theme">
+                <h2 class="section__title theme black-theme">
+                    <span class="section__title_bg theme black-theme" data-i18n="skills">
                         Skills
                     </span>
                 </h2>
@@ -118,25 +118,25 @@
                 </ul>
             </section>
 
-            <section class="section black-theme">
-                <h2 id="portfolio" class="section__title black-theme">
-                    <span class="section__title_bg black-theme" data-i18n="portfolio">
+            <section class="section theme black-theme">
+                <h2 id="portfolio" class="section__title theme black-theme">
+                    <span class="section__title_bg theme black-theme" data-i18n="portfolio">
                         Portfolio
                     </span>
                 </h2>
 
                 <ul class="buttons">
                     <li class="buttons__button">
-                        <button class="buttons__button_active buttons__button_inactive black-theme" data-i18n="winter">Winter</button>
+                        <button class="buttons__button_active buttons__button_inactive theme black-theme" data-season="winter" data-i18n="winter">Winter</button>
                     </li>
                     <li class="buttons__button">
-                        <button class="buttons__button_active buttons__button_inactive black-theme" data-i18n="spring">Spring</button>
+                        <button class="buttons__button_active buttons__button_inactive theme black-theme" data-season="spring" data-i18n="spring">Spring</button>
                     </li>
                     <li class="buttons__button">
-                        <button class="buttons__button_active buttons__button_inactive black-theme" data-i18n="summer">Summer</button>
+                        <button class="buttons__button_active buttons__button_inactive theme black-theme" data-season="summer" data-i18n="summer">Summer</button>
                     </li>
                     <li class="buttons__button">
-                        <button class="buttons__button_active black-theme" data-i18n="autumn">Autumn</button>
+                        <button class="buttons__button_active theme black-theme" data-season="autumn" data-i18n="autumn">Autumn</button>
                     </li>
                 </ul>
 
@@ -162,9 +162,9 @@
                 </ul>
             </section>
 
-            <section class="section black-theme">
-                <h2 id="video" class="section__title black-theme">
-                    <span class="section__title_bg black-theme" data-i18n="video">
+            <section class="section theme black-theme">
+                <h2 id="video" class="section__title theme black-theme">
+                    <span class="section__title_bg theme black-theme" data-i18n="video">
                         Video
                     </span>
                 </h2>
@@ -175,9 +175,9 @@
                 </div>
             </section>
 
-            <section class="section black-theme">
-                <h2 id="price" class="section__title black-theme">
-                    <span class="section__title_bg black-theme" data-i18n="price">
+            <section class="section theme black-theme">
+                <h2 id="price" class="section__title theme black-theme">
+                    <span class="section__title_bg theme black-theme" data-i18n="price">
                         Price
                     </span>
                 </h2>
@@ -236,7 +236,7 @@
         </div>
 
         <div class="container">
-            <section class="section section-contacts black-theme">
+            <section class="section section-contacts theme black-theme">
 				<div class="contacts">
 					<h2 id="contacts" class="section__title contacts__title" data-i18n="contact-me">Contact me</h2>
 
