@@ -1,6 +1,7 @@
-import i18Obj from "./translate.js";
+import i18Obj from "./vocabulary.js";
+// import { SETTINGS, SETTINGS_NAME } from '../assets/js/constants.js';
 
-function getTranslate(lang) {
+export function getTranslate(lang) {
     const dataAttr = document.querySelectorAll('[data-i18n]');
 
     dataAttr.forEach( (item) => {
@@ -15,23 +16,45 @@ function getTranslate(lang) {
     });
 }
 
+
 function changeLang() {
     const langBtns = [document.querySelector('.lang__en'), document.querySelector('.lang__ru')];
-    let activeBtn = langBtns[0];
+    // const settingsData = localStorage.getItem(SETTINGS_NAME);
 
-    langBtns.forEach( (item) => {
-        item.addEventListener('click', (env) => {
-            if (!item.classList.contains('active')) {
+    langBtns.forEach((item) => {
+        item.addEventListener('click', (evt) => {
+            const btn = evt.target;
 
-                item.classList.add('active');
-                activeBtn.classList.remove('active');
-                activeBtn = item;
-                localStorage.setItem('lang', activeBtn.innerText);
+            if (!btn.classList.contains('active')) {
+                langBtns.forEach((el) => el.classList.remove('active'));
+                btn.classList.add('active');
 
-                getTranslate(item.innerText);
+                getTranslate(btn.innerText);
             }
         })
     })
 }
 
 export default changeLang;
+
+
+// if (!settingsData) {
+//     const newSettinsData = JSON.stringify({
+//         ...SETTINGS,
+//         lang: activeBtn.innerText,
+//     });
+//     localStorage.setItem(SETTINGS_NAME, newSettinsData);
+    
+//     getTranslate(item.innerText);
+
+//     return;
+// }
+
+// const settings = JSON.parse(settingsData);
+// const newSettinsData = JSON.stringify({
+//     ...settings,
+//     lang: item.innerText,
+// });
+// localStorage.setItem(SETTINGS_NAME, newSettinsData);
+
+// getTranslate(item.innerText);
