@@ -13,7 +13,7 @@ function changeSeasons() {
                 btn.classList.remove('buttons__button_inactive');
 
                 seasonImgs.forEach( (photo, index) => {
-                    photo.src = `./assets/img/${btn.dataset.season}-${index + 1}.jpg`;
+                    photo.src = `../assets/img/${btn.dataset.season}-${index + 1}.jpg`;
                 })
             }
         });

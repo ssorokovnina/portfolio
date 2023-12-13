@@ -1,5 +1,5 @@
 import i18Obj from "./vocabulary.js";
-// import { SETTINGS, SETTINGS_NAME } from '../assets/js/constants.js';
+import { SETTINGS, SETTINGS_NAME } from '../assets/js/constants.js';
 
 export function getTranslate(lang) {
     const dataAttrs = document.querySelectorAll('[data-i18n]');
@@ -19,7 +19,7 @@ export function getTranslate(lang) {
 
 function changeLang() {
     const langBtns = [document.querySelector('.lang__en'), document.querySelector('.lang__ru')];
-    // const settingsData = localStorage.getItem(SETTINGS_NAME);
+    const settingsData = localStorage.getItem(SETTINGS_NAME);
 
     langBtns.forEach((item) => {
         item.addEventListener('click', (evt) => {
@@ -29,6 +29,25 @@ function changeLang() {
                 langBtns.forEach((el) => el.classList.remove('active'));
                 btn.classList.add('active');
 
+                if (!settingsData) {
+                    const newSettinsData = JSON.stringify({
+                        ...SETTINGS,
+                        lang: btn.innerText,
+                    });
+                    localStorage.setItem(SETTINGS_NAME, newSettinsData);
+                    
+                    getTranslate(btn.innerText);
+
+                    return;
+                }
+                
+                const settings = JSON.parse(settingsData);
+                const newSettinsData = JSON.stringify({
+                    ...settings,
+                    lang: btn.innerText,
+                });
+                localStorage.setItem(SETTINGS_NAME, newSettinsData);
+                
                 getTranslate(btn.innerText);
             }
         })
@@ -38,23 +57,3 @@ function changeLang() {
 export default changeLang;
 
 
-// if (!settingsData) {
-//     const newSettinsData = JSON.stringify({
-//         ...SETTINGS,
-//         lang: activeBtn.innerText,
-//     });
-//     localStorage.setItem(SETTINGS_NAME, newSettinsData);
-    
-//     getTranslate(item.innerText);
-
-//     return;
-// }
-
-// const settings = JSON.parse(settingsData);
-// const newSettinsData = JSON.stringify({
-//     ...settings,
-//     lang: item.innerText,
-// });
-// localStorage.setItem(SETTINGS_NAME, newSettinsData);
-
-// getTranslate(item.innerText);
