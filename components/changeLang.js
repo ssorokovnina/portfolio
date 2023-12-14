@@ -18,11 +18,11 @@ export function getTranslate(lang) {
 
 
 function changeLang() {
-    const langBtns = [document.querySelector('.lang__en'), document.querySelector('.lang__ru')];
-    const settingsData = localStorage.getItem(SETTINGS_NAME);
+    const langBtns = [document.querySelector('.lang__en'), document.querySelector('.lang__ru')];    
 
     langBtns.forEach((item) => {
         item.addEventListener('click', (evt) => {
+            const settingsData = localStorage.getItem(SETTINGS_NAME);
             const btn = evt.target;
 
             if (!btn.classList.contains('active')) {

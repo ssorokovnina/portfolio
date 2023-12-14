@@ -9,9 +9,12 @@ function setSettings() {
 
     const settings = JSON.parse(settingsData);
     getTranslate(settings.lang);
-    if (settings.theme != 'black-theme') {
-        changeClassTheme(settings.theme);
+    if (settings.lang === 'ru') {
+        document.querySelector('.lang__en').classList.remove('active');
+        document.querySelector('.lang__ru').classList.add('active');
     }
+
+    changeClassTheme(settings.theme);
 }
 
 window.addEventListener("load", setSettings);

@@ -3,8 +3,9 @@ import { SETTINGS, SETTINGS_NAME } from '../assets/js/constants.js';
 export function changeClassTheme(theme) {
     const themeImage = document.querySelector('.theme__image');
     const changableElements = document.querySelectorAll('.theme');
+    const themes = ['light-theme', 'black-theme'];
 
-    themeImage.dataset.theme = themeImage.classList[2];
+    themeImage.dataset.theme = themes.find( (item) => item !== theme);
 
     changableElements.forEach( (item) => {
         if (!item.classList.contains(theme)) {
@@ -22,6 +23,7 @@ function changeTheme() {
 
     dataAttr.addEventListener('click', (evt) => {
         const settingsData = localStorage.getItem(SETTINGS_NAME);
+        console.log(evt.target.dataset.theme);
 
         if (!settingsData) {
             const newSettinsData = JSON.stringify({
@@ -36,11 +38,11 @@ function changeTheme() {
         }
         
         const settings = JSON.parse(settingsData);
-        const newSettinsData = JSON.stringify({
+        const newSettingsData = JSON.stringify({
             ...settings,
             theme: evt.target.dataset.theme,
         });
-        localStorage.setItem(SETTINGS_NAME, newSettinsData);
+        localStorage.setItem(SETTINGS_NAME, newSettingsData);
         
         changeClassTheme(evt.target.dataset.theme);
     })
