@@ -17,6 +17,10 @@
 	border: 2px solid var(--sub-color);
 }
 
+.buttons__button_inactive.light-theme {
+	color: var(--main-bg-color);
+}
+
 .photos {
 	display: flex;
 	flex-direction: row-reverse;

@@ -22,6 +22,7 @@
 
 .navigation {    
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -29,7 +30,7 @@
     display: flex;
 }
 
-.menu__item {
+.menu__item, .theme-element {
     padding-left: 30px;
 }
 
@@ -52,6 +53,28 @@
 	padding: 0 4px;
 }
 
-.lang__en {
+.lang__en:hover, .lang__ru:hover {
+    color: var(--sub-color);
+}
+
+.lang .active {
 	color: var(--sub-color);
+}
+
+.theme-element {
+    width: 75px;
+    height: 45px;
+}
+
+.theme__image:hover {
+    filter: var(--hover-change-color);
+    cursor: var(--hover-cursor);
+}
+
+.theme__image.light-theme {
+    background-color: var(--main-bg-color);
+}
+
+.theme__image.light-theme:hover {
+    filter: none;
 }
